@@ -1,37 +1,18 @@
-## Welcome to GitHub Pages
+`git fetch upstream`
+A fetch just tells git to check what new commits/branches exist but don’t apply them to your local branches.
 
-You can use the [editor on GitHub](https://github.com/SophieRoseMcDonald/SophieRoseMcDonald.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+`git checkout upstream/master -b feature/update_to_ruby_2_3_4`
+Check out a copy of the projects version of the master branch into a new branch called feature/update_to_ruby_2_3_4
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+`git cherry-pick bba7338`
+Unlike merge, which copies everything that is different between 2 branches, a cherry-pick allows you to just grab only 1 commit and move it into your branch. bba7338 was the ID (SHA) for your Ruby upgrade commit. You only need to provide the first 7 characters, not the whole, massive string.
 
-### Markdown
+`git push origin feature/update_to_ruby_2_3_4`
+Push the code to GitHub as a new branch
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+`git rebase --interactive` if you want to pick which commits to include and which to drop (and which to squash together or edit)
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/SophieRoseMcDonald/SophieRoseMcDonald.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+When I did my first PR, an extra commit was accidently pushed. To resolve this:
+`git log`check all commits on branch
+`git rebase -i HEAD~2` 
+`git push -f origin updateruby`
