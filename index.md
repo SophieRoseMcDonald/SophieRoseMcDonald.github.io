@@ -16,3 +16,20 @@ When I did my first PR, an extra commit was accidently pushed. To resolve this:
 `git log`check all commits on branch
 `git rebase -i HEAD~2` 
 `git push -f origin updateruby`
+
+PR is failing because it is out of sync with Julia’s version of master.
+This is something you will encounter a lot because the upstream project will keep changing while you are working on your tasks.
+
+There are 2 ways to deal with this:
+• merge upstream master into your branch (this can even be done on the PR itself)
+• rebase your branch against the upstream master
+
+In the first case, all of the changes that have occurred on upstream are bundled up into 1 new commit on your branch.
+In the second case, history is rewritten and all of the commits you don’t yet have are inserted into your branch almost as if they had always been there. You will have heard a bit about this in that video from the Ruby Meetup.
+
+My preference in the second option—even though it sometimes gives you merge conflicts that need to be resolved, you get a nice, clean history.
+
+My recommendation would be to add the upstream as a new remote and then rebase your branch off upstream master.
+```git remote add upstream git@github.com:julianguyen/ifme.git
+git rebase upstream master
+```
