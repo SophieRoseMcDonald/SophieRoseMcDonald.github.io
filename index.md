@@ -32,4 +32,15 @@ My preference in the second option—even though it sometimes gives you merge co
 My recommendation would be to add the upstream as a new remote and then rebase your branch off upstream master.
 ```git remote add upstream git@github.com:julianguyen/ifme.git
 git rebase upstream master
+
+
+
+`git add...`
+`git commit`
+`gpsu` (git branch set upstream my branch origin/master)
+
+
+`git checkout -b update_contributor_blub` Create new branch
+
+
 ```
