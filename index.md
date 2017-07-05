@@ -42,5 +42,7 @@ git rebase upstream master
 
 `git checkout -b update_contributor_blub` Create new branch
 
+`git branch --set-upstream-to=origin/master`
+
 
 ```
