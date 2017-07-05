@@ -49,3 +49,11 @@ git checkout some_branch_name
 git fetch upstream
 git rebase upstream/master
 git push --force-with-lease
+
+git mv app/assets/images/contributors/sophie_mcdonald.JPG app/assets/images/contributors/sophie_mcdonald.jpg
+git commit --amend --no-edit
+git push --force-with-lease
+
+running test suite on firefox 
+Happy to discuss in detail when I’m there but, if you still have Firefox 46 installed, it is as simple as:
+```bundle exec rspec```
