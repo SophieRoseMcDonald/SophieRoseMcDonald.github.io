@@ -45,4 +45,7 @@ git rebase upstream master
 `git branch --set-upstream-to=origin/master`
 
 
-```
+git checkout some_branch_name
+git fetch upstream
+git rebase upstream/master
+git push --force-with-lease
