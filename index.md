@@ -57,3 +57,8 @@ git push --force-with-lease
 running test suite on firefox 
 Happy to discuss in detail when I’m there but, if you still have Firefox 46 installed, it is as simple as:
 ```bundle exec rspec```
+
+```git remote -v
+git remote add upstream git@github.com:julianguyen/ifme.git
+git fetch upstream
+git merge upstream/master```
