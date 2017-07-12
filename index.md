@@ -65,5 +65,25 @@ git merge upstream/master```
 
 `git branch -D update_contributor_blurbs` Capital D is forceful, lower case d is safer version.
 
+RUBY
+ single '' 
+ double "" 
+my_string = 'my_var' # my_var
+
+
+symbols: :symbols
+mutable can be changed
+imutable can't be changed
+.freeze can't change, saves memory (only one copy of string)
+
+MY_THING = ['a','b'].freeze
+arrays, hashes.
+numbers are already imuntable, can;t be changed.
+HASH
+{
+:somthing =>:somthing
+something: :something
+}
+
 `git status | fgrep 'modified' | cut -d " " -f 4 | xargs bundle exec rubocop` rubocop will check modified files.
 `-a` is automatic
