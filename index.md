@@ -131,6 +131,8 @@ git merge upstream/master```
 `git branch -D update_contributor_blurbs` Capital D is forceful, lower case d is safer version.
 
 RUBY
+https://github.com/bbatsov/ruby-style-guide
+
  single '' 
  double "" 
 my_string = 'my_var' # my_var
