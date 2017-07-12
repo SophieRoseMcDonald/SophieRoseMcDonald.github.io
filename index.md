@@ -81,9 +81,19 @@ arrays, hashes.
 numbers are already imuntable, can;t be changed.
 HASH
 {
-:somthing =>:somthing
+:somthing =>:somth+ing
 something: :something
 }
+
+if/else/unless
+return 'bacon' unless 'vegan'
+
+user id= 
+if  profile.blank?
+current_user.id
+else
+profile
+end
 
 `git status | fgrep 'modified' | cut -d " " -f 4 | xargs bundle exec rubocop` rubocop will check modified files.
 `-a` is automatic
