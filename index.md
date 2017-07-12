@@ -64,3 +64,6 @@ git fetch upstream
 git merge upstream/master```
 
 `git branch -D update_contributor_blurbs` Capital D is forceful, lower case d is safer version.
+
+`git status | fgrep 'modified' | cut -d " " -f 4 | xargs bundle exec rubocop` rubocop will check modified files.
+`-a` is automatic
