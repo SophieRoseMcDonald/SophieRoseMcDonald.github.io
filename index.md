@@ -100,5 +100,6 @@ end
 
 
 JAVASCRIPT
-'use strict'; its focus isn't about cleaner code, but does what you expect it to do. helps to not create an acidental global variable.
+'use strict'; its focus isn't about cleaner code, but does what you expect it to do. helps to not create an acidental global variable.Must be the first line
+
 
