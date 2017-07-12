@@ -126,7 +126,9 @@ git merge upstream/master```
 
 ```git pull
    git branch -a # checkout branches
+   
 ```
+`git diff <filename> <filename>` will show the difference between 2 files, before merging.
 
 `git branch -D update_contributor_blurbs` Capital D is forceful, lower case d is safer version.
 
