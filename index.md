@@ -97,3 +97,8 @@ end
 
 `git status | fgrep 'modified' | cut -d " " -f 4 | xargs bundle exec rubocop` rubocop will check modified files.
 `-a` is automatic
+
+
+JAVASCRIPT
+'use strict'; its focus isn't about cleaner code, but does what you expect it to do. helps to not create an acidental global variable.
+
